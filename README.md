@@ -21,14 +21,13 @@ A real-time full-stack chat application with instant messaging, image sharing, a
 
 ## 🌐 Live Demo
 
-🔗 [YOUR_DEPLOYED_LINK_HERE](YOUR_DEPLOYED_LINK_HERE)
+🔗 [DEPLOYED_LINK](https://chat-app-eta-eight-11.vercel.app/login)
 
 ### Demo Credentials
 
 | Account | Email | Password |
 |---------|-------|----------|
-| User 1  | demo1@test.com | demo123 |
-| User 2  | demo2@test.com | demo123 |
+| demo1  | demo@gmail.com | 123456 |
 
 ---
 
@@ -67,6 +66,7 @@ A real-time full-stack chat application with instant messaging, image sharing, a
 | JWT | Authentication |
 | bcryptjs | Password hashing |
 | Cloudinary | Image storage |
+| Deployed | Vercel |
 
 ---
 
@@ -195,10 +195,3 @@ App runs at `http://localhost:5173`
 | `newMessage` | Server → Client | Delivers a new message in real time |
 
 ---
-
-## 🙋 Author
-
-**Sriniketh**
-- GitHub: [YOUR_GITHUB](https://github.com/YOUR_GITHUB)
-- LinkedIn: [YOUR_LINKEDIN](https://linkedin.com/in/YOUR_LINKEDIN)
-- Portfolio: [YOUR_PORTFOLIO](YOUR_PORTFOLIO_LINK)
