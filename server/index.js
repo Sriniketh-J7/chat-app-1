@@ -66,7 +66,6 @@ app.use(
 app.use(express.json({ limit: "10mb" })); // increased limit for image uploads
 
 app.get("/", (req,res) => res.send("working"));
-app.get("/api/status", (req, res) => res.send("Server is running"));
 app.use("/api/users", userRouter);
 app.use("/api/messages", messageRouter);
 
