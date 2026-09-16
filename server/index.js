@@ -15,8 +15,8 @@ const server = http.createServer(app);
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  process.env.CLIENT_URL,
-].filter(Boolean);
+  "https://chat-app-eta-eight-11.vercel.app",
+];
 
 // Initialize socket.io server
 export const io = new Server(server, {
@@ -52,14 +52,7 @@ io.on("connection", (socket) => {
 // Middleware
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // allow requests with no origin (like mobile apps, curl)
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin) || allowedOrigins.includes("*")) {
-        return callback(null, true);
-      }
-      return callback(new Error("Not allowed by CORS"), false);
-    },
+    origin: allowedOrigins,
     credentials: true,
   })
 );
